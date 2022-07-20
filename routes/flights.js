@@ -2,13 +2,11 @@ const express = require("express");
 const router = express.Router();
 const flightsCtrl = require("../controllers/flights");
 
-// GET /flights (index functionality)
+//flights
 router.get("/", flightsCtrl.index);
-// GET /flights/new (new functionality)
 router.get("/new", flightsCtrl.new);
-// GET /flights/:id (show functionality)
-// router.get("/:id", flightsCtrl.show);
-// POST /flights (create functionality)
+router.get("/:id", flightsCtrl.show);
 router.post("/", flightsCtrl.create);
+router.delete("/:id", flightsCtrl.delete);
 
 module.exports = router;

@@ -1,8 +1,214 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+* {
+  box-sizing: border-box;
+  --mainColor: teal;
+
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 16px;
+  background-image: linear-gradient(to bottom, #034a17, #9ec9a6);
+  display: grid;
+  grid-template-rows: 333px 50px auto;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+#body-container {
+  margin: auto;
+  height: 100vh;
+  width: 780px;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: white;
+}
+
+h2 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+h3 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  background-color: teal;
+  color: white;
+  width: 700px;
+  text-align: left;
+}
+
+nav {
+  grid-area: nav;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+nav>a {
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  font-size: 22px;
+  display: inline-block;
+  margin: 15px 25px;
+  background:
+    linear-gradient(to bottom, var(--mainColor) 0%,
+      var(--mainColor) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 4px 4px;
+  color: rgb(5, 21, 1);
+  text-decoration: none;
+  transition: background-size .2s;
+}
+
+
+nav>a:hover {
+  background-size: 4px 50px;
+  color: white;
+}
+
+nav>a:selected {
+  background-size: 4px 50px;
+  color: white;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: white;
+
 }
 
 a {
-  color: #00B7FF;
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  font-size: 18px;
+  display: inline-block;
+  margin: 15px 25px;
+  text-decoration: none;
+  color: teal;
+  font-weight: bold;
 }
+
+.table {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 700px;
+}
+
+
+.titles {
+  text-align: center;
+  font-size: 16px;
+  color: darkslategrey;
+  font-weight: bold;
+  background-color: #e7eaee;
+}
+
+td {
+  border-bottom: 1px solid #e7eaee;
+}
+
+.airline {
+  text-align: left;
+  width: 100px;
+}
+
+.airport {
+  text-align: center;
+  width: 50px;
+}
+
+.flight-no {
+  text-align: center;
+  width: 100px;
+}
+
+.departs {
+  text-align: left;
+}
+
+.details {
+  text-align: center;
+  width: 120px;
+}
+
+.deletebutton {
+  text-align: center;
+}
+
+td button {
+  background-color: var(--mainColor);
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 5px 15px;
+  color: white;
+}
+
+#flight-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(22rem, auto));
+  grid-gap: 10px;
+}
+
+#arrive-details {
+  text-align: left;
+  display: grid;
+  width: 700px;
+}
+
+#new-form {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(2, minmax(22rem, auto));
+}
+
+#current-tickets {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, minmax(22rem, 22rem));
+}
+
+
+#new-form * {
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#new-form input[type="submit"] {
+  grid-column: span 2;
+  width: 10rem;
+  margin-left: auto;
+}
+
+#add-destination,
+#new-ticket {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(2, minmax(auto, auto));
+}
+
+label {
+  font-weight: bold;
+  border-bottom: 1px solid rgb(44.6%, 73.4%, 73.4%);
+} */
